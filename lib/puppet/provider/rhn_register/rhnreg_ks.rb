@@ -5,8 +5,6 @@ Puppet::Type.type(:rhn_register).provide(:rhnreg_ks) do
     parameter is set to true.
   EOS
 
-  confine :osfamily => :redhat
-
   commands :rhnreg_ks => "rhnreg_ks"
 
   def build_parameters
